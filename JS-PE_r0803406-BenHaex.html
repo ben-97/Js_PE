@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Thomas More">
+    <title>Anoroc Services</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<style>
+    body {
+        margin-top: 4rem;
+    }
+    
+    .navbar {
+        background-image: linear-gradient(141deg, #1f1f1f 0%, #a6c0b5 51%, #7aeec9 75%);
+    }
+</style>
+
+<body>
+
+    <!-- Ben Haex - r0803406 -->
+    <!-- De meeste informatie heb ik gevonden op https://stackoverflow.com/ , https://www.w3schools.com/ en https://developer.mozilla.org/en-US/ -->
+
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Anoroc Services</a>
+    </nav>
+
+    <main role="main" class="container">
+
+        <h1>Registreer</h1>
+        <p class="lead">Meld je aan bij Anoroc Services, wij beschermen jouw software tegen malware!</p>
+
+        <div class="row">
+            <div class="col-md-8">
+                <!-- ONTWERP HIER HET FORMULIER OP -->
+                <form class="form-horizontal">
+                    <fieldset>
+
+                        <!-- Form Name -->
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="voornaam">Voornaam</label>
+                                <input type="text" class="form-control" id="voornaam" placeholder="Uw voornaam" required="">
+                            </div>
+
+                            <!-- Forname input-->
+                            <div class="col-md-6 mb-3">
+                                <label for="naam">Naam</label>
+                                <input type="text" class="form-control" id="naam" placeholder="Uw naam" required="">
+                            </div>
+                        </div>
+
+
+                        <!-- Prepended text-->
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="gebruikersnaam">Gebruikersnaam</label>
+                                <div class="input-group">
+                                    <span class="input-group-text">@</span>
+                                    <input id="gebruikersnaam" name="gebruikersnaam" class="form-control" placeholder="u911236" type="text" required="">
+                                </div>
+                            </div>
+
+                            <!-- Email input-->
+                            <div class="col-md-6 mb-3">
+                                <label for="emailadres">Emailadres</label>
+                                <input id="emailadres" name="emailadres" type="text" placeholder="mail@example.be" class="form-control input-md">
+                            </div>
+                        </div>
+
+                        <!-- Password input-->
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="wachtwoord">Wachtwoord</label>
+                                <input id="wachtwoord" name="wachtwoord" type="password" placeholder="" class="form-control input-md">
+                                <span class="help-block">Je wachtwoord moet minsten 8 tekens lang zijn</span>
+                            </div>
+
+                            <!-- Remember Password input-->
+                            <div class="col-md-6 mb-3">
+                                <label for="herhaling">Herhaling wachtwoord</label>
+                                <input id="herhaling" name="herhaling" type="password" placeholder="" class="form-control input-md">
+                            </div>
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="row">
+                            <div class="col-md-12 mb-3">
+                                <label for="adres">Adres</label>
+                                <input id="adres" name="adres" type="text" placeholder="Adres en huisnummer" class="form-control input-md" required="">
+                            </div>
+                        </div>
+
+                        <!-- Select Basic -->
+                        <div class="row">
+                            <div class="col-md-5 mb-3">
+                                <label for="land">Land</label>
+                                <select id="land" name="land" class="custom-select">
+                                    <option value="1">Kies een land</option>
+                                    <option value="2">Frankrijk</option>
+                                    <option value="3">Belgie«</option>
+                                    <option value="4">Spanje</option>
+                                    <option value="5">Spanje</option>
+                                </select>
+                            </div>
+
+
+                            <!-- Select Basic -->
+                            <div class="col-md-4 mb-3">
+                                <label for="provincie">Provincie</label>
+                                <select id="provincie" name="provincie" class="custom-select">
+                                    <option value="1">Kies een provincie</option>
+                                    <option value="2">Limburg</option>
+                                    <option value="3">Antwerpen</option>
+                                    <option value="4">West-vlaanderen</option>
+                                </select>
+                            </div>
+
+                            <!-- Select Basic -->
+                            <div class="col-md-3 mb-3">
+                                <label for="postcode">Postcode</label>
+                                <select id="postcode" name="postcode" class="custom-select">
+                                    <option value="1">3660</option>
+                                    <option value="2">3600</option>
+                                    <option value="3">3665</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <hr class="mb-4">
+
+                        <!-- Multiple Checkboxes -->
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="custom-control custom-checkbox">
+                                    <h4>Hou me op de hoogte</h4>
+                                    <input type="checkbox" class="custom-control-input" id="nieuwsbrief">
+                                    <label class="custom-control-label" for="nieuwsbrief">schrijven je in voor onze
+                                        nieuwsbrief</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="voorwaarden">
+                                    <label class="custom-control-label" for="voorwaarden">Ik ga akkoord met de algemene
+                                        voorwaarden.</label>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-md-4">
+                                <h4 class="mb-3">Betaling</h4>
+                                <div class="custom-control custom-radio">
+                                    <input id="bankingapp" name="betalingswijze" type="radio" class="custom-control-input" checked required>
+                                    <label class="custom-control-label" for="bankingapp">Banking app</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input id="overschrijving" name="betalingswijze" type="radio" class="custom-control-input" required>
+                                    <label class="custom-control-label" for="Payconq">Payconq</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input id="visacard" name="betalingswijze" type="radio" class="custom-control-input" required>
+                                    <label class="custom-control-label" for="visacard">Visa Card</label>
+                                </div>
+                            </div>
+                        </div>
+
+                    </fieldset>
+                    <hr class="mb-3">
+                    <button onclick="myFunction()" class="btn btn-primary btn-lg btn-block mb-3 button" type="submit">Wave your
+                        magic wand</button>
+                </form>
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="alert alert-danger" role="alert">
+                    <h4 class="alert-heading">Yikes, errors...</h4>
+                    <p id="Errors">Text danger</p>
+                </div>
+
+                <div class="alert alert-success" role="alert">
+                    <h4 class="alert-heading">Goed gedaan!</h4>
+                    <p id="Errors">Aww yeah, je werd geregistreerd</p>
+                </div>
+
+                <div class="alert alert-info" role="alert">
+                    <h4 class="alert-heading">Betalingswijze</h4>
+                    <p id="Errors">betalingswijze</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+    <script>
+        var voornaam = document.myform.voornaam.value;
+        var naam = document.myform.naam.value;
+        var gebruikersnaam = document.myform.gebruikersnaam.value;
+        var emailadres = document.myform.emailadres.value;
+        var wachtwoord = document.myform.wachtwoord.value;
+        var herhaling = document.myform.herhaling.value;
+        var adres = document.myform.adres.value;
+        var land = document.myform.land.value;
+        var provincie = document.myform.provincie.value;
+        var postcode = parseInt(document.myform.postcode.value);
+        var nieuwsbrief = document.myform.nieuwsbrief.value;
+        var voorwaarden = document.myform.voorwaarden.value;
+        var betalingswijze = document.myform.betalingswijze.value;
+
+        $('.alert').hide()
+
+        function validateForm() {
+
+
+
+            // Errors controlle
+            var errors = [];
+            var gegevens = [voornaam, naam, gebruikersnaam, adres, land, provincie]
+            var melding = "";
+            for (let i = 0; i < gegevens.length; i++) {
+                var veld = gegevens[i];
+                errors.push(checkEmptyField(veld, melding));
+            }
+
+            // melding leegveld
+            function checkEmptyField(veld, melding) {
+                if (veld == "") {
+                    melding = alert("Het veld " + veld.value + " is vereist.");
+                    return melding;
+                }
+            }
+
+            melding = checkEmptyfield(postcode, "Postcode is vereist.")
+            if (melding != "") {
+                errors.push(melding);
+            }
+
+
+            errors.push(CheckPC(veld, melding, Postcode));
+            if (document.getElementById("voorwaarden").checked) {
+                errors.push("U moet de algemene voorwaarden accepteren");
+            }
+
+            function validatePayment(veld) {
+                if (document.getElementById("betalingswijze").value)
+                    veld = alert("Je betalingswijze is" + veld.value);
+                return veld;
+                document.getElementById("radio").value.checked = false;
+            }
+
+
+            if (document.getElementsByClassName("radio").checked) {
+                validatePayment(document.getElementById("betalingswijze").innerHTML) = veld;
+            }
+            // https://stackoverflow.com/questions/46155/how-to-validate-an-email-address-in-javascript
+            function validateEmail(emailadres) {
+                var emailformat =
+                    /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                return emailformat.test(String(emailadres).toLowerCase());
+            }
+
+            // Controle emailadres melding
+            if (validateEmail(emailadres)) {
+                errors.push("E-mailadres klopt niet!");
+            }
+
+            function CheckPC(veld, postcode) {
+                var veld = "";
+                if (!(Number.isInteger(veld) && veld >= 1000 && veld <= 9999)) {
+                    return true
+                } else {
+                    errors.push("De waarde van de postcode moet tussen de 1000 en 9999 liggen");
+                    return false
+                }
+            }
+
+            $(document).ready(function(error) {
+                $(".button").click(function(myFunction) {
+                    if (errors.length > 0) {
+                        errors.forEach(function(error) {
+                            $("#Errors").append("<li>" + error + "</li>");
+                        })
+                        $(".alert-danger").show();
+                    } else {
+                        $(".alert-info").show();
+                        $(".alert-succes").show();
+                    }
+                })
+            });
+        }
+    </script>
+
+</body>
+
+</html>
